@@ -1,0 +1,50 @@
+[
+    {
+        "Due Date of Payment": "1/1/2018", 
+        "Opening Balance": 1000.0, 
+        "EMI/ Amount paid": 173.54, 
+        "Interest": 11.67, 
+        "Principal": 161.87, 
+        "Closing Balance": 838.13
+    }, 
+    {
+        "Due Date of Payment": "1/2/2018", 
+        "Opening Balance": 838.13, 
+        "EMI/ Amount paid": 173.54, 
+        "Interest": 9.78, 
+        "Principal": 163.76, 
+        "Closing Balance": 674.37
+    }, 
+    {
+        "Due Date of Payment": "1/3/2018", 
+        "Opening Balance": 674.37, 
+        "EMI/ Amount paid": 173.54, 
+        "Interest": 7.87, 
+        "Principal": 165.67, 
+        "Closing Balance": 508.7
+    }, 
+    {
+        "Due Date of Payment": "1/4/2018", 
+        "Opening Balance": 508.7, 
+        "EMI/ Amount paid": 173.54, 
+        "Interest": 5.93, 
+        "Principal": 167.6, 
+        "Closing Balance": 341.1
+    }, 
+    {
+        "Due Date of Payment": "1/5/2018", 
+        "Opening Balance": 341.1, 
+        "EMI/ Amount paid": 173.54, 
+        "Interest": 3.98, 
+        "Principal": 169.56, 
+        "Closing Balance": 171.54
+    }, 
+    {
+        "Due Date of Payment": "1/6/2018", 
+        "Opening Balance": 171.54, 
+        "EMI/ Amount paid": 173.54, 
+        "Interest": 2.0, 
+        "Principal": 171.54, 
+        "Closing Balance": 0.0
+    }
+]

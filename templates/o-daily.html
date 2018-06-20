@@ -1,0 +1,89 @@
+<html>
+	<!-- <head>
+		<title>Daily Reporting</title>
+		<style type="text/css">
+			.sidenav {
+			    height: 100%;
+			    width: 260px;
+			    position: fixed;
+			    z-index: 1;
+			    top: 0;
+			    left: 0;
+			    background-color: #2e3e4e;
+			    overflow-x: hidden;
+			    padding-top: 20px;
+			}
+			ul{
+				list-style-type: none;
+			}
+			li a:hover{
+				color: #fff;
+			}
+			a{
+				color: grey;
+				text-decoration: none;
+				font-family: "Open Sans", sans-serif;
+    			font-size: 14px;
+			}
+			.main{
+			    margin-left: 260px; /* Same as the width of the sidenav */
+			    font-size: 28px; /* Increased text to enable scrolling */
+			    padding: 0px 10px;
+			}	
+		</style>
+	</head> -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Daily Reporting</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+		<style type="text/css">
+			.boxx{
+				width: 70%;
+				height: 30%;
+			}
+			.centerall {
+height: 100vh;
+padding: 0;
+display: flex;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+}
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+		</style>
+	</head>
+	<body class="">
+		<div class="box boxx Absolute-Center">
+		<center>
+			<a class="button">Button</a><a class="button">Button</a>
+		</center>
+		</div>
+		<div class="box has-text-centered Absolute-Center">
+			<!-- <button class="button">Center me</button> -->
+			<form action = "http://localhost:5000/daily-reporting" method = "post" enctype='multipart/form-data'>
+	   			<p>Enter JSON File:
+	   			<input type = "file" name="file" /></p>
+	   			<p><input class="button" type = "submit" value = "submit" /></p>
+	   		</form>
+		</div><!-- 
+	   	<div class="sidenav">
+	   		<ul>
+	   			<li><a href="#">Daily Reporting</a></li>
+	   			<li><a href="#">Transaction Reporting</a></li>
+	   		</ul>
+	   	</div>
+	   	<div class="main">
+	   		<form action = "http://localhost:5000/daily-reporting" method = "post" enctype='multipart/form-data'>
+	   			<p>Enter JSON File:</p>
+	   			<p><input type = "file" name="file" /></p>
+	   			<p><input type = "submit" value = "submit" /></p>
+	   		</form>
+	   	</div> -->
+   	</body>
+</html>

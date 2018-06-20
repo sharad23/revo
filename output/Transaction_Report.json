@@ -1,0 +1,38 @@
+[
+    {
+        "outstanding_principle": 9000, 
+        "money_borrowed": 1000, 
+        "interest_rate": 0.08, 
+        "principle_paid": 2000, 
+        "date": "01/01/2018", 
+        "outstanding_interest": 12008.767123287671, 
+        "interest_paid": 0
+    }, 
+    {
+        "outstanding_principle": 10000, 
+        "money_borrowed": 1000, 
+        "interest_rate": 0.08, 
+        "principle_paid": 0, 
+        "date": "03/01/2018", 
+        "outstanding_interest": 22820.602739726026, 
+        "interest_paid": 0
+    }, 
+    {
+        "outstanding_principle": -10, 
+        "money_borrowed": 0, 
+        "interest_rate": 0.08, 
+        "principle_paid": 10010, 
+        "date": "05/01/2018", 
+        "outstanding_interest": 33838.13698630137, 
+        "interest_paid": 1000
+    }, 
+    {
+        "outstanding_principle": -10, 
+        "money_borrowed": 0, 
+        "interest_rate": 0.08, 
+        "principle_paid": 0, 
+        "date": "05/01/2018", 
+        "outstanding_interest": 32826.119452054794, 
+        "interest_paid": 1000
+    }
+]

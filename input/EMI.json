@@ -1,0 +1,7 @@
+{
+  "Amount":1000,
+  "Yearly_Interest_Rate": 0.14,
+  "Loan_Duration_Months": 6,
+  "Compounding_Period": "Monthly",
+  "Start_Date": "11/1/2018"
+}

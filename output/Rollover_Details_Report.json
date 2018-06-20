@@ -1,0 +1,9 @@
+[
+    {
+        "id": "ABC", 
+        "Interest_Rate": "8.0%", 
+        "Loan_Start_Date": "15/02/2018", 
+        "Principal_Amount": 98295.34, 
+        "New_Due_Date": "20/02/2018"
+    }
+]

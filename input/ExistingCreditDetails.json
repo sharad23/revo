@@ -1,0 +1,8 @@
+{
+  "ReferenceId":"3123TVD",
+  "InterestRate": 0.10,
+  "LoanStartDate": "1/1/2018",
+  "OutstandingPrincipal": 10000,
+  "OutstandingInterest": 100,
+  "DueDate": "1/2/2018"
+}

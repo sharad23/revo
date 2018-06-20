@@ -1,0 +1,114 @@
+[
+    {
+        "id": 15, 
+        "date": "15/02/2018", 
+        "outstanding_principal": 78000.0, 
+        "outstanding_interest": 0.0, 
+        "principle_overdue": 0.0, 
+        "interest_overdue": 0.0
+    }, 
+    {
+        "id": 16, 
+        "date": "16/02/2018", 
+        "outstanding_principal": 78000.0, 
+        "outstanding_interest": 0.0, 
+        "principle_overdue": 0.0, 
+        "interest_overdue": 0.0
+    }, 
+    {
+        "id": 17, 
+        "date": "17/02/2018", 
+        "outstanding_principal": 78000.0, 
+        "outstanding_interest": 0.0, 
+        "principle_overdue": 0.0, 
+        "interest_overdue": 0.0
+    }, 
+    {
+        "id": 18, 
+        "date": "18/02/2018", 
+        "outstanding_principal": 78000.0, 
+        "outstanding_interest": 0.0, 
+        "principle_overdue": 0.0, 
+        "interest_overdue": 0.0
+    }, 
+    {
+        "id": 19, 
+        "date": "19/02/2018", 
+        "outstanding_principal": 78000.0, 
+        "outstanding_interest": 0.0, 
+        "principle_overdue": 0.0, 
+        "interest_overdue": 0.0
+    }, 
+    {
+        "id": 20, 
+        "date": "20/02/2018", 
+        "outstanding_principal": 78000.0, 
+        "outstanding_interest": 0.0, 
+        "principle_overdue": 0.0, 
+        "interest_overdue": 0.0
+    }, 
+    {
+        "id": 21, 
+        "date": "21/02/2018", 
+        "outstanding_principal": 76016.66, 
+        "outstanding_interest": 33.32, 
+        "principle_overdue": 74000.0, 
+        "interest_overdue": 33.32
+    }, 
+    {
+        "id": 22, 
+        "date": "22/02/2018", 
+        "outstanding_principal": 74066.2, 
+        "outstanding_interest": 65.78, 
+        "principle_overdue": 72016.66, 
+        "interest_overdue": 65.78
+    }, 
+    {
+        "id": 23, 
+        "date": "23/02/2018", 
+        "outstanding_principal": 72147.77, 
+        "outstanding_interest": 97.38, 
+        "principle_overdue": 70066.2, 
+        "interest_overdue": 97.38
+    }, 
+    {
+        "id": 24, 
+        "date": "24/02/2018", 
+        "outstanding_principal": 70260.53, 
+        "outstanding_interest": 128.16, 
+        "principle_overdue": 68147.77, 
+        "interest_overdue": 128.16
+    }, 
+    {
+        "id": 25, 
+        "date": "25/02/2018", 
+        "outstanding_principal": 68403.65, 
+        "outstanding_interest": 158.11, 
+        "principle_overdue": 66260.53, 
+        "interest_overdue": 158.11
+    }, 
+    {
+        "id": 26, 
+        "date": "26/02/2018", 
+        "outstanding_principal": 66576.31, 
+        "outstanding_interest": 187.26, 
+        "principle_overdue": 64403.65, 
+        "interest_overdue": 187.26
+    }, 
+    {
+        "id": 27, 
+        "date": "27/02/2018", 
+        "outstanding_principal": 64777.73, 
+        "outstanding_interest": 215.61, 
+        "principle_overdue": 62576.31, 
+        "interest_overdue": 215.61
+    }, 
+    {
+        "id": 28, 
+        "date": "28/02/2018", 
+        "outstanding_principal": 63007.1, 
+        "outstanding_interest": 243.18, 
+        "principle_overdue": 60777.73, 
+        "interest_overdue": 243.18
+    }
+]

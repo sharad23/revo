@@ -1,0 +1,156 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transaction Reporting</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<style type="text/css">
+	body{
+		background-color: #5843C3;
+		padding: 5%;
+	}
+	.sidenav {
+		height: 100%;
+		width: 260px;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		overflow-x: hidden;
+		padding-top: 20px;
+	}
+	ul{
+		list-style-type: none;
+	}
+	li a:hover{
+		color: #fff;
+	}
+	a{
+		color: grey;
+		text-decoration: none;
+		font-family: "Open Sans", sans-serif;
+		font-size: 14px;
+	}
+	.main{
+		margin-left: 260px; /* Same as the width of the sidenav */
+		font-size: 28px; /* Increased text to enable scrolling */
+		padding: 0px 10px;
+	}	
+	.boxx{
+	}
+	.centerall {
+		height: 100vh;
+		padding: 0;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.box{
+		border: 0px solid red !important;
+		width: 40%;
+		min-width: 300px;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 0px;
+		box-shadow: 0 0px 0px rgba(0,0,0,0), 0 0 0 0px rgba(0,0,0) !important;
+
+	}
+	#button-box{
+		/*margin-top: 150px;*/
+		margin-bottom: 5px;
+		background-color:rgba(0, 0, 0, 0.2);
+	}
+	#upload-box{
+		margin-top: 0px;
+		padding: 8%;
+		   box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1) !important;
+		   background-color:rgba(0, 0, 0, 0.2);
+	}
+	.button{
+		width: 31%;
+		    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+		    margin: 1%
+	}
+	.file{
+		/*border: 1px solid red;*/
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+	.file-label{
+		/*border: 1px solid red;*/
+		width: 80%;
+		margin-right: auto !important;
+		margin-left: auto !important;
+		/*min-width: 250px;*/
+	}
+	.file-name{
+		max-width: 100% !important;
+		/*padding: 0px !important;*/
+		background-color:rgba(0, 0, 0, 1);
+
+		background-color: #fff;
+
+	}
+	.submit{
+		width: 80%;
+		margin-top: 10px;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('input[type="file"]').change(function(e){
+            var fileName = e.target.files[0].name;
+            // alert('The file "' + fileName +  '" has been selected.');
+            $(".file-name").text( fileName );
+        });
+    });
+</script>
+</head>
+
+<body class="">
+	<div class="box" id="button-box">
+		<center>
+			<a class="button" href="{{ domain }}daily-reporting">Daily Report</a><a class="button is-success is-selected" href="{{ domain }}trans-reporting">Transaction</a><a class="button" href="{{ domain }}rollover-reporting">Rollover</a>
+		</center>
+	</div>
+	<div class="box has-text-centered" id="upload-box">
+		<!-- <button class="button">Center me</button> -->
+		<form action = "{{ domain }}trans-reporting" method = "post" enctype='multipart/form-data'>
+
+
+			<div class="file has-name is-boxed">
+				<label class="file-label">
+					<input id="file-upload" class="file-input" type="file" name="file">
+					<span class="file-cta">
+						<span class="file-icon">
+							<i class="fas fa-upload"></i>
+						</span>
+						<span class="input-label">
+							Configuration Parameters
+						</span>
+					</span>
+					<span class="file-name"></span>
+				</label>
+			</div>
+
+			<p><input class="button submit" type = "submit" value = "Submit" /></p>
+		</form>
+	</div><!-- 
+	<div class="sidenav">
+		<ul>
+			<li><a href="#">Daily Reporting</a></li>
+			<li><a href="#">Transaction Reporting</a></li>
+		</ul>
+	</div>
+	<div class="main">
+		<form action = "http://localhost:5000/daily-reporting" method = "post" enctype='multipart/form-data'>
+			<p>Enter JSON File:</p>
+			<p><input type = "file" name="file" /></p>
+			<p><input type = "submit" value = "submit" /></p>
+		</form>
+	</div> -->
+</body>
+</html>
