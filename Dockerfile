@@ -1,7 +1,7 @@
 FROM python:3
 MAINTAINER SHARAD BAIDYA
 
-ENV BASE_URL='http://13.230.100.118/'
+ENV BASE_URL='http://13.230.100.118:5000/'
 
 COPY . /home/docker/
 
