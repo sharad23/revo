@@ -37,7 +37,6 @@ def hello():
                         c.writerow(result.values())
         # return 'complete'
         return send_from_directory(directory='.', filename=filename+'.csv')
-
     else:
         return render_template('daily.html', domain=DOMAIN)
     # return 'Hello World'
