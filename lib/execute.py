@@ -51,7 +51,7 @@ def daily_reporting(**kwargs):
 
         #interest amount
         interest_amount = 0
-        interest_amount = principle * (1 + (interest_rate/comp_period)) - principle  if date > actual_Due_Date \
+        interest_amount = principle * (1 + (interest_rate/comp_period)) - principle if date > actual_Due_Date \
             else interest_amount
 
 
@@ -118,19 +118,7 @@ def daily_reporting(**kwargs):
         else:
             interest_overdue = 0
 
-
         result = OrderedDict()
-        # results.append(
-        #     {
-        #         'id': i+1,
-        #         'date': date.strftime('%d/%m/%Y'),
-        #         # 'interest': round(interest_amount, 3),
-        #         'outstanding_principal': round(outstanding_principle, 2),
-        #         'outstanding_interest': round(outstanding_interest, 2),
-        #         'principle_overdue': round(principle_overdue, 2),
-        #         'interest_overdue': round(interest_overdue, 2)
-        #     })
-
         result['S.No'] = i
         result['Date'] = date.strftime('%d/%m/%Y')
         result['Outstanding Principal'] = round(outstanding_principle, 2)

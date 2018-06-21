@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, send_from_directory
+from flask import jsonify
 from lib.execute import daily_reporting, transaction_reporting, rollover_reporting, emi_cal
 import json
 import csv
@@ -14,6 +15,23 @@ app.config['UPLOAD_FOLDER'] = PATH
 @app.route('/', methods=['GET'])
 # def dashboard():
 #    return render_template('home.html', domain=DOMAIN)
+
+
+@app.route('/api/daily-reporting', methods=['POST'])
+def test():
+    if request.method == 'POST':
+        input_data = request.get_json()
+        print(input_data)
+        results = daily_reporting(**input_data)
+        return jsonify(results)
+
+
+@app.route('/api/trans-reporting', methods=['POST'])
+def test2():
+    if request.method == 'POST':
+        input_data = request.get_json()
+        results = transaction_reporting(**input_data)
+        return jsonify(results)
 
 
 @app.route('/daily-reporting', methods=['POST', 'GET'])
@@ -96,7 +114,6 @@ def hello3():
     else:
         return render_template('rollover.html', domain=DOMAIN)
     # return 'Hello World'
-
 
 
 @app.route('/emi', methods=['POST', 'GET'])
