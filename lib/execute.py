@@ -17,7 +17,7 @@ interest_paid_dict = {
 def daily_reporting(**kwargs):
     principle = kwargs.get('principle', 1000)
     interest_rate = kwargs.get('interest_rate', 0.10)
-    grace_period = kwargs.get('grace', 3)
+    grace_period = int(kwargs.get('grace', 3))
     start_date = datetime.datetime.strptime(kwargs.get('start_date', '1/1/2018'), '%d/%m/%Y')
     loan_limit = kwargs.get('loan_limit', 3000)
     due_date = datetime.datetime.strptime(kwargs.get('due_date', '15/1/2018'), '%d/%m/%Y')
@@ -26,7 +26,7 @@ def daily_reporting(**kwargs):
     interest_paid_dict = kwargs.get('interest_paid_dict', {})
     money_borrowed_dict = kwargs.get('money_borrowed_dict', {})
     limit = kwargs.get('days', 27)
-    comp_period = kwargs.get('comp_period', 360)
+    comp_period = int(kwargs.get('comp_period', 360))
 
     # initialize
     principle_paid = 0
