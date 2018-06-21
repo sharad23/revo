@@ -171,9 +171,9 @@ def transaction_reporting(**kwargs):
     outstanding_interest = 0
     for activity in activities:
         date = datetime.datetime.strptime(activity.get('date'), '%d/%m/%Y')
-        interest_paid = activity.get('interest_paid', 0)
-        principle_paid = activity.get('principle_paid', 0)
-        money_borrowed = activity.get('money_borrowed', 0)
+        interest_paid = int(activity.get('interest_paid', 0))
+        principle_paid = int(activity.get('principle_paid', 0))
+        money_borrowed = int(activity.get('money_borrowed', 0))
 
         date_diff = date - start_date
         days = date_diff.days
