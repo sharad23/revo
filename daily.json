@@ -1,0 +1,16 @@
+{
+    "principle": 10000,
+    "interest_rate": 0.08,
+    "comp_period": 365,
+    "start_date": "1/1/2018",
+    "due_date": "15/1/2018",
+    "grace": 3,
+    "loan_limit": 1000,
+    "principle_paid_dict": {
+        "2/1/2018": 400,
+        "3/1/2018": 420
+    },
+    "interest_paid_dict": {
+        "2/1/2018": 20
+    }
+}
