@@ -33,7 +33,6 @@ def test2():
         results = transaction_reporting(**input_data)
         return jsonify(results)
 
-
 @app.route('/daily-reporting', methods=['POST', 'GET'])
 def hello():
     if request.method == 'POST':
