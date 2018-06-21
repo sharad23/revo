@@ -15,8 +15,8 @@ interest_paid_dict = {
 
 
 def daily_reporting(**kwargs):
-    principle = kwargs.get('principle', 1000)
-    interest_rate = kwargs.get('interest_rate', 0.10)
+    principle = int(kwargs.get('principle', 1000))
+    interest_rate = float(kwargs.get('interest_rate', 0.10))
     grace_period = int(kwargs.get('grace', 3))
     start_date = datetime.datetime.strptime(kwargs.get('start_date', '1/1/2018'), '%d/%m/%Y')
     loan_limit = kwargs.get('loan_limit', 3000)
